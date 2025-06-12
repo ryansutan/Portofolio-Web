@@ -3,8 +3,11 @@
     box-sizing: border-box /* Agar tidak melebar */
 }
 
-/* -- Header -- */
+body {
+  margin: 0;
+}
 
+/* -- Header -- */
 .header {
     display: flex;
     justify-content: space-around;
@@ -45,8 +48,28 @@ nav > a {
     margin: 0 15px;
 }
 
+.nav-home:hover {
+  font-weight: bold;
+}
+
+.nav-profile:hover {
+  font-weight: bold;
+}
+
+.nav-project:hover {
+  font-weight: bold;
+}
+
+.nav-message:hover {
+  font-weight: bold;
+}
+
 .hamburger {
   display: none; /* default: tidak tampil di desktop */
+}
+
+.home {
+  margin-bottom: 20px;
 }
 
 /* -- Main Content --*/
@@ -67,7 +90,7 @@ nav > a {
 }
 
 .img-1 {
-    background-image: url(../assets/img1.jfif);
+    background-image: url(../assets/img.jfif);
 }
 
 .img-2 {
@@ -92,16 +115,20 @@ nav > a {
     text-align: center;
     font-size: 1.2rem;
     padding: 0 80px;
-    margin-bottom: 10px;
-    text-decoration: underline;
+    margin-bottom: 20px;
+    background-color: rgba(184, 181, 178, 0.371);
+}
+
+.our-profile > h1 {
+  padding-top: 20px;
 }
 
 /* Project */
 .project {
     height: 700px;
     text-align: center;
-    margin-bottom: 10px;
-    text-decoration: underline;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
 }
 
 .project-pertama,
@@ -117,6 +144,7 @@ nav > a {
     box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
     width: 500px;
     font-size: 1.1rem;
+    padding: 0 50px;
 }
 
 .rekomendasi-wisata,
@@ -124,15 +152,19 @@ nav > a {
     box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
     width: 500px;
     font-size: 1.1rem;
+    padding: 0 50px;
 }
 
 /* Message Us */
 .message-us {
     height: 600px;
+    font-size: 1.2rem;
+    background-color: rgba(0, 255, 255, 0.303);
 }
 
 .message-us > h1 {
     text-align: center;
+    padding-top: 20px;
 }
 
 .message-container {
@@ -140,7 +172,6 @@ nav > a {
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 
 .input,
@@ -153,6 +184,7 @@ nav > a {
 form, .output {
     width: 100%;
     max-width: 400px;
+    background-color: white;
 }
 
 .form-group {
@@ -180,11 +212,12 @@ button {
     display: block;
 }
 
-
 /* -- Footer -- */
 footer {
     text-align: center;
+    padding: 10px;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -270,6 +303,7 @@ footer {
   .rekomendasi-wisata,
   .dashboard-report {
     width: 90%;
+    padding: 0 50px;
   }
 
   .konversi-suhu {
@@ -280,8 +314,12 @@ footer {
     margin-bottom: 10px;
   }
 
+  .message-us{
+    height: auto;
+    padding-bottom: 20px;
+  }
+
   footer {
-    margin-top: 80px;
     padding: 10px;
     padding-bottom: 0;
     text-align: center;
@@ -291,7 +329,7 @@ footer {
   }
 
   main {
-    padding-bottom: 60px; /* kasih jarak agar tidak nempel ke bawah */
+    padding-bottom: 20px; /* kasih jarak agar tidak nempel ke bawah */
   }
 }
 
