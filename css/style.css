@@ -403,6 +403,12 @@ footer {
     gap: 10px;
   }
 
+  .message-container,
+  .list-certificate {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
   footer {
     padding: 0 10px;
     text-align: center;
