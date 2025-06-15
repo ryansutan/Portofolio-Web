@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
     <!-- CSS External -->
     <link rel="stylesheet" href="css\style.css">
 </head>
@@ -27,9 +31,10 @@
         <!-- Navbar -->
         <nav id="navbar">
             <a class="nav-home" href="#home">Home</a>
-            <a class="nav-profile" href="#our-profile">Our Profile</a>
+            <a class="nav-profile" href="#our-profile">Profile</a>
             <a class="nav-project" href="#project">Project</a>
-            <a class="nav-message" href="#message-us">Message Us</a>
+            <a class="nav-certificate" href="#certificate">Certificates</a>
+            <a class="nav-message" href="#message-us">Contact</a>
         </nav>
     </header>
 
@@ -57,9 +62,9 @@
             </div>
         </section>
 
-         <!-- Our Profile Section -->
+         <!-- Profile Section -->
          <section id="our-profile" class="our-profile">
-            <h1>Our Profile</h1>
+            <h1>Profile</h1>
             <p>Nama saya Ryan Sutan Wijaya, 
                 lulusan S1 Sistem Informasi dari Universitas Trunojoyo Madura dengan IPK 3.58. 
                 Saya memiliki ketertarikan dalam pengembangan sistem informasi dan analisis data. 
@@ -68,102 +73,90 @@
                 Saat ini saya aktif mengikuti pelatihan dan terus mengembangkan keterampilan melalui berbagai proyek pribadi.</p>
          </section>
 
-         <!-- Project Section -->
+         <!-- Projects Section -->
         <section id="project" class="project">
-            <h1>My Project</h1>
+            <div class="color-mask"></div>
+            <h1>Projects</h1>
 
-            <!-- Project Baris Pertama -->
+            <!-- Projects Baris Pertama -->
             <div class="project-pertama">
                 <div class="konversi-suhu">
                     <h3>Website Konversi Suhu</h3>
                     <p>
-                        Proyek ini merupakan aplikasi web yang dibangun menggunakan <strong>HTML</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong> 
-                        untuk melakukan konversi suhu antara <strong>Celcius</strong> dan <strong>Fahrenheit</strong>. 
-                        Website ini dirancang dengan <em>desain responsif</em> agar tetap nyaman digunakan pada berbagai ukuran layar, baik di desktop maupun perangkat mobile.
-                        <br>
+                        Aplikasi web konversi suhu antara <strong>Celcius</strong> dan <strong>Fahrenheit</strong> menggunakan <strong>HTML</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong>.  
                         🔗 <a href="https://github.com/ryansutan/Web-Konversi-Suhu-Frontend" target="_blank">Lihat Proyek di GitHub</a>
                     </p>
                 </div>
                 <div class="kalkulator-digital">
                     <h3>Kalkulator Digital</h3>
                     <p>
-                        Kalkulator Digital merupakan aplikasi web yang dibangun menggunakan <strong>HTML</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong> 
-                        untuk melakukan operasi perhitungan seperti <strong>Penjumlahan</strong>, <strong>Pengurangan</strong>, <strong>Perkalian</strong>, <strong>Pembagian</strong>, dan <strong>Persen</strong>. 
-                        Website ini dirancang dengan <em>desain responsif</em> agar tetap nyaman digunakan pada berbagai ukuran layar, baik di desktop maupun perangkat mobile.
-                        <br>
-                        🔗 <a href="https://github.com/ryansutan/Kalkulator-Online" target="_blank">Lihat Proyek di GitHub</a>
+                        Aplikasi web kalkulator digital yang dibangun menggunakan <strong>HTML</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong>.  
+                        <br> 🔗 <a href="https://github.com/ryansutan/Kalkulator-Online" target="_blank">Lihat Proyek di GitHub</a>
                     </p>
                 </div>
             </div>
 
-            <!-- Project Baris Kedua -->
+            <!-- Projects Baris Kedua -->
             <div class="project-kedua">
                 <div class="rekomendasi-wisata">
                     <h3>Website Rekomendasi Wisata</h3>
                     <p>
-                        Proyek ini merupakan aplikasi web rekomendasi tempat wisata yang dibangun menggunakan <strong>PHP</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong>, 
-                        serta terintegrasi dengan <strong>database MySQL</strong>. Website ini didesain dengan dua jenis pengguna, yaitu <strong>Admin</strong> dan <strong>Pengunjung</strong>.
-                        <br>
-                        Proyek ini tidak memberikan rekomendasi secara acak. Nantinya akan diterapkan <strong>metode SMART (Simple Multi-Attribute Rating Technique)</strong> untuk menghasilkan rekomendasi yang lebih objektif dan relevan berdasarkan kriteria tertentu.
-                        <br>
-                        Proyek masih dalam tahap pengembangan dan akan segera tersedia di GitHub.
+                        Aplikasi web rekomendasi tempat wisata dengan PHP, CSS, JavaScript, dan MySQL. Terdapat dua peran pengguna: Admin dan Pengunjung.  
+                        Sistem rekomendasi akan menerapkan metode SMART untuk hasil yang objektif dan relevan.  
+                         Proyek masih dalam tahap pengembangan dan akan tersedia di GitHub.
                     </p>
                 </div>
                 <div class="dashboard-report">
                     <h3>Dashboard - Report</h3>
-                    <p>
-                        Proyek ini merupakan visualisasi data interaktif yang dibangun menggunakan <strong>Microsoft Power BI</strong> untuk menganalisis data penjualan game online secara global dan per negara. 
-                        Dataset diambil dari situs <strong>Kaggle</strong> dan mencakup informasi seperti <em>total penjualan global</em>, <em>penjualan berdasarkan negara</em>, serta tren penjualan dalam rentang waktu tertentu.
-                        <br>
-                        Dashboard ini dilengkapi dengan elemen visual seperti grafik batang, peta interaktif, dan filter dinamis agar pengguna dapat mengeksplorasi data berdasarkan tahun, wilayah, maupun kategori lainnya.
-                        <br>
-                        🔗 <a href="https://github.com/ryansutan/PowerBI-project" target="_blank">Lihat Proyek di GitHub</a>
+                   <p>
+                        Visualisasi data interaktif dengan Microsoft Power BI untuk menganalisis penjualan game global dan per negara.  
+                        Dataset dari Kaggle, mencakup tren penjualan, wilayah, dan kategori.  
+                        Menampilkan grafik, serta filter dinamis untuk eksplorasi data.  
+                        <br> 🔗 <a href="https://github.com/ryansutan/PowerBI-project" target="_blank">Lihat Proyek di GitHub</a>
                     </p>
                 </div>
             </div>
-
         </section>
 
-        <!-- Message Us Section -->
+        <!-- Certifications section -->
+        <section id="certificate" class="certificate">
+            <h1>Certificates</h1>
+            <div class="list-certificate">
+                <ol>
+                    <li>Pelatihan Operator Komputer Madya – Kominfo Surabaya (Mar 2023) 🔗<a href="https://drive.google.com/file/d/1aoLXvswhC4csCwrMokYoWM1cvWsEFklb/view?usp=drive_link" target="_blank">Certificate</a></li>
+                    <li>Mini Cource Data Analytics – RevoU (Mei 2025) 🔗<a href="https://drive.google.com/file/d/1K_f8mH79UXn1S3Sv64GMRGiM78P1GEgn/view?usp=drive_link" target="_blank">Certificate</a></li>
+                    <li>Seminar Mastering Data Analysis with Excel – Business Education (Mei 2025) 🔗<a href="https://drive.google.com/file/d/1hZUGHlWjzb5cjkmO-DruQ5TrjSWNeLNl/view?usp=drive_link" target="_blank">Certificate</a></li>
+                    <li>Fundamental Course Software Engineering – RevoU (Mei 2025) 🔗<a href="https://drive.google.com/file/d/1M2dxlTc8kJR40q16MNabC1oIXgAlUHJT/view?usp=drive_link" target="_blank">Certificate</a></li>
+                    <li>Introduction to Data Analytics - DQLab (Juni 2025) 🔗<a href="https://academy.dqlab.id/certificate/pdf/DQLABMBINTLC6RVOUHJ" target="_blank">Certificate</a></li>
+                </ol>  
+            </div>            
+        </section>
+
+        <!-- Contact Me Section -->
         <section id="message-us" class="message-us">
-            <h1>Message Us</h1>
+            <div class="background-mask"></div>
+            <h1>Contact Me</h1>
 
             <div class="message-container">
-                <!-- Form Input -->
-                <form id="contactForm" class="input">
-                    <div class="form-group">
-                        <label for="name">Nama</label>
-                        <input type="text" id="name" name="name">
-                        <small class="error-message"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
-                        <small class="error-message"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telepon</label>
-                        <input type="text" id="phone" name="phone">
-                        <small class="error-message"></small>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Pesan</label>
-                        <textarea id="message" name="message" rows="4"></textarea>
-                        <small class="error-message"></small>
-                    </div>
-                    <button type="submit">Kirim</button>
-                </form>
-
-                <!-- Output -->
-                <div class="output">
-                    <h3>Pesan Anda:</h3>
-                    <p><strong>Nama:</strong> <span id="out-name"></span></p>
-                    <p><strong>Email:</strong> <span id="out-email"></span></p>
-                    <p><strong>Telepon:</strong> <span id="out-phone"></span></p>
-                    <p><strong>Pesan:</strong> <span id="out-message"></span></p>
+                <div class="contact-item">
+                    <span><i class="fa-solid fa-phone"></i> Telepon</span>
+                    <span>: 085745768347</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fa-solid fa-envelope"></i> Email</span>
+                    <span>: ryanw3312@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
+                    <span>: Ryan Sutan Wijaya 🔗<a href="https://www.linkedin.com/in/ryansutan/" target="_blank">Klik Disini</a></span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fa-brands fa-github"></i> GitHub</span>
+                    <span>: Ryan Sutan Wijaya 🔗<a href="https://github.com/ryansutan" target="_blank">Klik Disini</a></span>
                 </div>
             </div>
         </section>
+
 
     </main>
 

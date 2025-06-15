@@ -1,6 +1,6 @@
 /* Keseluruhan */
 * {
-    box-sizing: border-box /* Agar tidak melebar */
+  box-sizing: border-box /* Agar tidak melebar */
 }
 
 body {
@@ -9,25 +9,25 @@ body {
 
 /* -- Header -- */
 .header {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Logo */
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Jarak antara logo dan teks */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara logo dan teks */
 }
 
 .main-logo {
-    border: 1px solid;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-image: url(../assets/logo.jpg);
-    background-size: cover;
-    background-position: center;
+  border: 1px solid;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url(../assets/logo.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .logo-text {
@@ -60,6 +60,10 @@ nav > a {
   font-weight: bold;
 }
 
+.nav-certificate:hover {
+  font-weight: bold;
+}
+
 .nav-message:hover {
   font-weight: bold;
 }
@@ -76,75 +80,97 @@ nav > a {
 
 /* Home Content */
 .banner-img {
-    display: flex;
-    justify-content: center;
-    border: 1px solid;
-    height: 600px;
-    background-size: cover;
-    background-position: center;
-    display: none;
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: none;
 }
 
 .banner-img:first-child {
-    display: flex; /* Tampilkan slide pertama saat awal */
+  display: flex; /* Tampilkan slide pertama saat awal */
 }
 
 .img-1 {
-    background-image: url(../assets/img.jfif);
+  background-image: url(../assets/img.jfif);
 }
 
 .img-2 {
-    background-image: url(../assets/img2.jfif);
+  background-image: url(../assets/img2.jfif);
 }
 
 .img-3 {
-    background-image: url(../assets/img3.jfif);
+  background-image: url(../assets/img3.jfif);
 }
 
 .banner-text {
-    text-align: center;
-    align-items: center;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-    font-size: 1.5rem;
+  text-align: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  font-size: 1.5rem;
 }
 
 /* Our Profile */
 .our-profile {
-    height: 200px;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 0 80px;
-    margin-bottom: 20px;
-    background-color: rgba(184, 181, 178, 0.371);
+  height: 200px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0 280px;
+  margin-bottom: 20px;
 }
 
 .our-profile > h1 {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 /* Project */
 .project {
-    height: 700px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+  height: 550px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  position: relative;      /* Menjadi parent posisi untuk .color-mask */
+  overflow: hidden;
+  background-image: url('../assets/projek.jfif');
+  background-position: top;
+}
+
+.color-mask {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* biru semi-transparan */
+}
+
+.project > h1 {
+  padding-top: 10px;
+  position: relative;
+  z-index: 2;
 }
 
 .project-pertama,
 .project-kedua {
-    display: flex;
-    gap: 70px;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .konversi-suhu,
 .kalkulator-digital {
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
-    width: 500px;
-    font-size: 1.1rem;
-    padding: 0 50px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  width: 500px;
+  font-size: 1.1rem;
+  padding: 0 50px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .rekomendasi-wisata,
@@ -153,69 +179,115 @@ nav > a {
     width: 500px;
     font-size: 1.1rem;
     padding: 0 50px;
-}
-
-/* Message Us */
-.message-us {
-    height: 600px;
-    font-size: 1.2rem;
-    background-color: rgba(0, 255, 255, 0.303);
-}
-
-.message-us > h1 {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.message-container {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.input,
-.output {
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
-    width: 500px;
-    padding: 10px;
-}
-
-form, .output {
-    width: 100%;
-    max-width: 400px;
+    border: 1px solid white;
+    border-radius: 20px;
     background-color: white;
 }
 
-.form-group {
-    margin-bottom: 16px;
+/* Certificates */
+.certificate {
+  height: 300px;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    font-size: 1rem;
-    margin-top: 4px;
-    box-sizing: border-box;
+.certificate > h1 {
+  text-align: center;
+  padding-top: 10px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
+.list-certificate {
+  width: 680px;
+  display: flex;
+  margin: auto;
+  font-size: 1.1rem;
+  margin-top: 30px;
 }
 
-.error-message {
-    color: red;
-    font-size: 0.875rem;
-    margin-top: 4px;
-    display: block;
+.list-certificate ol {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-certificate li {
+  margin-bottom: 10px; /* Atur jarak antar item */
+}
+
+
+/* Contact Us */
+.message-us {
+    height: 400px;
+    font-size: 1.2rem;
+    position: relative;      /* Menjadi parent posisi untuk .background-mask */
+    overflow: hidden;        /* Menjaga agar background tidak meluber */
+}
+
+.background-mask {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/bg.jfif);
+  background-size: cover;
+  background-position: center;
+
+  -webkit-mask-image: linear-gradient(to bottom, 
+      rgba(0, 0, 0, 0) 0px,         /* 200px pertama solid */
+      rgba(0, 0, 0, 0.1) 200px,     /* mulai transparan */
+      rgba(0, 0, 0, 0.4) 300px,     /* makin transparan */
+      rgba(0, 0, 0, 1) 400px        /* hilang sepenuhnya */
+  );
+  mask-image: linear-gradient(to bottom, 
+      rgba(0, 0, 0, 0) 0px, 
+      rgba(0, 0, 0, 0.1) 200px, 
+      rgba(0, 0, 0, 0.4) 300px, 
+      rgba(0, 0, 0, 1) 400px
+  );
+
+  z-index: 1;
+}
+
+.message-us > h1 {
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.message-container {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.message-container span {
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 150px auto;
+  gap: 10px;
+  align-items: center;
 }
 
 /* -- Footer -- */
 footer {
     text-align: center;
     padding: 10px;
+    font-size: 1.05rem;
 }
 
 
@@ -262,18 +334,9 @@ footer {
     align-items: flex-start;
   }
 
-  /* Message dan Output Centered */
-  .message-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .input,
-  .output {
-    width: 90%;
-    max-width: 400px;
-    margin: 10px auto;
+  .list-certificate {
+    font-size: 1.0rem;
+    width: 600px;
   }
 
   /* Our Profile Section */
@@ -289,6 +352,11 @@ footer {
     height: auto;
     padding: 0 20px;
     margin-bottom: 20px;
+    padding-bottom: 15px;
+  }
+
+  .project h1 {
+    padding-top: 0;
   }
 
   .project-pertama,
@@ -314,22 +382,27 @@ footer {
     margin-bottom: 10px;
   }
 
-  .message-us{
+  /* Contact */
+  .message-us {
+    margin-top: 0;
     height: auto;
     padding-bottom: 20px;
   }
 
-  footer {
-    padding: 10px;
-    padding-bottom: 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    font-size: 0.9rem;
+  .message-us h1 {
+    margin-top: 0;
   }
 
-  main {
-    padding-bottom: 20px; /* kasih jarak agar tidak nempel ke bawah */
+  .message-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 0 10px;
+    text-align: center;
+    font-size: 0.9rem;
   }
 }
 
