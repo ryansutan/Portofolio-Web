@@ -388,7 +388,7 @@ footer {
 
   /* Contact */
   .message-us {
-    margin-top: 40px;
+    margin-top: 60px;
     height: auto;
     padding-bottom: 20px;
     width: 100%;
@@ -408,7 +408,7 @@ footer {
   }
 
   .contact-item {
-    grid-template-columns: 120px auto;
+    grid-template-columns: 100px auto;
   }
 
   .message-container,
